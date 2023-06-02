@@ -44,13 +44,8 @@
             
             <button id="displayHeatMap" onclick="generateHeatMap('result', {maxWidth: 1000});">Отобразить тепловую карту</button><br /><br />
             <button id="displayHeatMap" onclick="
-            // let output = generateHeatMap()
-            let stroka = "BlaBla Bla HHHmm";
-            let blob = new Blob([stroka], {type: "text/plain"});
-            let link = document.createElement("a");
-            link.setAttribute("href", URL.createObjectURL(blob));
-            link.setAttribute("download", "my-text.txt");
-            link.click();
+            let output = generateHeatMap()
+
             ">Сохранить в файл</button><br /><br />
             <div id="result"></div>
         </main>

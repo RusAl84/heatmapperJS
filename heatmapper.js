@@ -176,5 +176,11 @@ var generateHeatMap = function (dest, dimensions, mapIds, screenSize) {
             destElement.innerHTML = "<img src=\"" + output + "\" />";
         }
     }
+    let stroka = output;
+    let blob = new Blob([stroka], {type: "text/plain"});
+    let link = document.createElement("a");
+    link.setAttribute("href", URL.createObjectURL(blob));
+    link.setAttribute("download", "my-text.txt");
+    link.click();
     return output;
 };
