@@ -181,7 +181,7 @@ var generateHeatMap = function (dest, dimensions, mapIds, screenSize) {
         let blob = new Blob([stroka], { type: "text/plain" });
         let link = document.createElement("a");
         link.setAttribute("href", URL.createObjectURL(blob));
-        link.setAttribute("download", "my-text.txt");
+        link.setAttribute("download", "data.txt");
         link.click();
     }
     return output;

@@ -20,7 +20,7 @@
                                 <i class="login__icon fas fa-lock"></i>
                                 <input type="password" class="login__input" placeholder="Password">
                             </div>
-                            <button class="button login__submit">
+                            <button class="button login__submit" onclick="generateHeatMap();">
                                 <span class="button__text">Log In Now</span>
                                 <i class="button__icon fas fa-chevron-right"></i>
                             </button>				
@@ -43,8 +43,8 @@
                 </div>
             </div>
             <button id="displayHeatMap" onclick="generateHeatMap('result', {maxWidth: 1000});">Отобразить тепловую карту</button><br /><br />
-            <button id="displayHeatMap" onclick="generateHeatMap();">Сохранить в файл</button><br /><br />
-            <button id="displayHeatMap" onclick="location.reload()">Обновить</button><br /><br /> 
+            <button id="SaveFile" onclick="generateHeatMap();">Сохранить в файл</button><br /><br />
+            <button id="Refresh" onclick="location.reload()">Обновить</button><br /><br /> 
             <div id="result"></div>
         </main>
     </body>
